@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width, initial-scale=1.0">
     <meta name="description" content="Club de video">
-    <meta name="keywords"content="peliculas, videos, cine, series">
+    <meta name="keywords"content="peliculas, videos, cine, series, comedia, romance, horror">
     <meta property="og:title" content="Club de video">   
 </head>
 <body>
@@ -59,13 +59,25 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required mindlength="3"
       </div>
-      <div>
-        <label for="mensaje">Mensaje:</label>
-        <textarea name="mensaje" id="mensaje" required minlength="15"></textarea>
-      </div>
+      <div class="form-group">
+    <label for="fecha_lanzamiento">Fecha de Lanzamiento:</label>
+    <input type="date" id="fecha_lanzamiento" name="fecha_lanzamiento" max="2026-12-31">
+</div>
       <div>
         <input type="submit" value="Enviar Mensaje">
       </div>
+      <div class="form-group">
+    <label>Género(s) de la película:</label>
+    
+    <input type="checkbox" id="comedia" name="genero_pelicula[]" value="comedia">
+    <label for="comedia">Comedia</label>
+    
+    <input type="checkbox" id="romance" name="genero_pelicula[]" value="romance">
+    <label for="romance">Romance</label>
+    
+    <input type="checkbox" id="horror" name="genero_pelicula[]" value="horror">
+    <label for="horror">Horror</label>
+</div>
     </form>
   </section>
 </main>
